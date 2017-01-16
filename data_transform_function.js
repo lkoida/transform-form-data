@@ -4,7 +4,7 @@
    * @param numberOfProperties
    * @returns {Array}
    */
-  static transformFormData (data, numberOfProperties = 3) {
+  static transformFormData (data, numberOfProperties = null) {
     let result = [], obj = {}, length = data.length;
     for (let i = 0; i < length; i++) {
       if (data[i].name) {
